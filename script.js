@@ -12,13 +12,13 @@ var specialcharacters = ["!","@","#","$","^","%","&","*","(",")","{","}","[","]"
 //creating function called generate password
 
 function generatePassword() {
-  var password = "";
+  var newpassword = "";
   for(var i = 0; i < passwordlength; i++) {
     var Random = Math.floor(Math.random() * storedvalues.length);
-    password = password + storedvalues[Random];
+    newpassword = newpassword + storedvalues[Random];
 
   }
-  return password;
+  return newpassword;
 
 }
 //Generating prompts
